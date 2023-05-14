@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .wp-block-group {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.wp-site-title {
+  font-size: 60px;
+  font-weight: 10;
+  font-style: oblique;
+  font-family: Roboto;
+  text-align: center;
+  margin-bottom: 5rem;
+
+}
+
+.wp-navigation {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 3rem;
+  word-spacing: 105px;
+}
+
+.wp-navigation-link {
+  text-decoration: none;
+  font-weight: 1;
+  font-size: 25px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.wp-navigation-link:hover {
+  color: #999;
+}
+
+  .cover {
+  position: relative;
+}
+
+.cover__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cover__image-background {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.cover__inner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+.layout-grid-column {
+  grid-column: span 4;
+}
+
+.heading {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 3rem;
+  line-height: 1.2;
+  font-family: Roboto;
+}
+
+.paragraph {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 3rem;
+  line-height: 1.2;
+  font-family: Roboto;
+}
+
+.buttons {
+  margin-top: 2.5rem;
+}
+
+.button {
+  display: inline-block;
+  margin-left: 3rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 0px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: Roboto;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.wp-block-group {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.has-text-align-center {
+  text-align: center;
+  font-family: Roboto;
+}
+
+.has-large-font-size {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-family: Roboto;
+}
+
+.wp-block-heading {
+  line-height: 1.5;
+}
+
+.wp-block-separator {
+  background-color: #e5e5e5;
+  color: #000000;
+  opacity: 0.4; /* This is the default opacity for separators. */
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-image {
+  flex-basis: 40%;
+}
+
+.product-image img {
+  max-width: 80%;
+  margin-left: 15rem;
+}
+
+.product-details {
+  flex-basis: 47%;
+}
+
+.product-title {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 0;
+  font-family: Roboto;
+}
+
+.product-subtitle {
+  font-size: 22px;
+  color: #000000;
+  margin-top: 5px;
+  font-family: Roboto;
+}
+
+.product-price {
+  font-size: 32px;
+  font-style: normal;
+  margin: 20px 0;
+  font-family: Roboto;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid #000 ;
+  border-radius: 0px;
+  font-size: 18px;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  font-family: Roboto;
+}
+
+.product-description,
+.product-shipping {
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: Roboto;
+}
+
+.product-text {
+  font-size: 18px;
+  line-height: 0;
+  font-family: Roboto;
+}
+
+.review {
+  font-size: 30px;
+  font-weight: 1;
+  font-style: italic;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.citation {
+  font-size: 20px;
+  text-align: center;
+}
+
+.address {
+  background-color: #fffefe;
+  color: #000000;
+  padding: 60px;
+  text-align: center;
+}
+
+.contact-info {
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: #000000;
+}
+
+  </style>
+  <head>
+  </head>
+  <body>
+    <div class="wp-block-group alignfull">
+      <h1 class="wp-site-title">Essential Oils</h1>
+      <nav class="wp-navigation">
+        <a class="wp-navigation-link" href="#">Home</a>
+        <a class="wp-navigation-link" href="#">Products</a>
+        <a class="wp-navigation-link" href="#">Collections</a>
+        <a class="wp-navigation-link" href="#">About</a>        
+        <a class="wp-navigation-link" href="#">Contact</a>
+      </nav>
+    </div>
+    <section>
+      <div class="cover alignfull is-light">
+        <span aria-hidden="true" class="cover__background has-background-dim-0 has-background-dim"></span>
+        <img class="cover__image-background" src="https://attardemo.files.wordpress.com/2022/02/pexels-karolina-grabowska-4041392.jpg"/>
+        <div class="cover__inner-container">
+          <div class="layout-grid alignfull column1-desktop-grid__span-4 column1-desktop-grid__start-2 column1-desktop-grid__row-1 column1-tablet-grid__span-4 column1-tablet-grid__row-1 column1-mobile-grid__span-4 column1-mobile-grid__row-1">
+            <div class="layout-grid-column layout-grid__padding-none">
+              <h2 class="heading" id="100-pure-roseessential-oil">100% Pure Rose<br>Essential Oil</h2>
+              <p class="paragraph">Our range of high-quality essential oils has been hand-picked by our scent specialists.</p>
+              <div class="buttons">
+                <a class="button" href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wp-block-group">
+        <h2 class="wp-block-heading has-text-align-center has-large-font-size" id="rose-essential-oil-is-known-for-its-moisturizing-comforting-and-balancing-properties">
+          Rose essential oil is known for its moisturizing, comforting, and balancing properties.
+        </h2>
+      </div>
+    </section>
+    <section>
+      <hr class="wp-block-separator has-text-color has-css-opacity has-background alignfull is-style-wide">
+    </section>
+    <section>
+      <div class="product">
+        <div class="product-image">
+          <img src="https://attardemo.files.wordpress.com/2022/02/pexels-karolina-grabowska-4041391.jpg?w=777" alt="">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title" id="pure-rose-essential-oil">Pure Rose Essential Oil</h2>
+          <p class="product-subtitle">Rose Petal Extract, 5 ml</p>
+          <h2 class="product-price" id="129-00">$129.00</h2>
+          <div class="product-description">
+            <p><strong>Description</strong></p>
+            <p class="product-text">A soft, floral scent to calm the body and mind.</p>
+          </div>
+          <div class="product-shipping">
+            <p><strong>Shipping</strong></p>
+            <p class="product-text">We ship our products worldwide, with a flat shipping rate.</p>
+          </div>
+          <div class="product-buy">
+            <a href="#" class="buy-button">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <hr class="wp-block-separator has-text-color has-css-opacity has-background alignfull is-style-wide">
+    </section>
+    <section>
+      <div class="wp-block-group" style="padding-top: 6vh; padding-bottom: 6vh;">
+        <h2 class="review" id="my-all-time-favourite-scent-it-smells-divine-and-lasts-all-day-a-true-and-beautiful-rose-fragrance">
+          <p>“My all time favourite scent. It smells divine and lasts all day! A true and beautiful rose fragrance.”</p>
+        </h2>
+        <p class="citation">Sarah from Melbourne</p>
+      </div>
+    </section>
+    <footer>
+      <div class="address">
+        <p class="contact-info">
+          123 Street, Sydney, NSW | (123) 456-789 | <a href="mailto:email@example.com">email@example.com</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
